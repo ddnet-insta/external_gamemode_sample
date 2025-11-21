@@ -39,6 +39,8 @@ void CExtGameControllerSample::OnCharacterSpawn(class CCharacter *pChr)
 {
 	CGameControllerPvp::OnCharacterSpawn(pChr);
 
+	// TODO: why does giving rainbow and send chat target not work here?
+
 	// give default weapons
 	pChr->GiveWeapon(WEAPON_GUN, false, 10);
 	pChr->GiveWeapon(WEAPON_HAMMER, false, -1);
